@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Contact</title>
+</head>
+<body>
+
+  <header>
+    <img src="Bakery_c/bakery-logo_c.png" alt="North Star Bakery logo with a loaf of bread and wheat" width="160">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Contact Us and Pre-Order</h1>
+    <p>Want to reserve a Signature Loaf, order a cake, or ask a question? Fill out the form and we'll reply within one business day. Payment is taken at pickup.</p>
+
+    <section>
+      <h2>Inquiry and Pre-Order Request</h2>
+      <p>Fields marked with * are required.</p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Your Information</legend>
+          <p>
+            <label for="name">Full name *</label><br>
+            <input type="text" id="name" name="name" required>
+          </p>
+          <p>
+            <label for="email">Email address *</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </p>
+          <p>
+            <label for="phone">Phone number (optional)</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="555-555-0123" pattern="\d{3}-\d{3}-\d{4}" title="Use the format 555-555-0123">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Request Type *</legend>
+          <p>
+            <input type="radio" id="preorder" name="request_type" value="pre-order" required>
+            <label for="preorder">Pre-order for pickup</label><br>
+            <input type="radio" id="cake" name="request_type" value="cake">
+            <label for="cake">Custom or celebration cake</label><br>
+            <input type="radio" id="question" name="request_type" value="question">
+            <label for="question">General question</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Details</legend>
+          <p>
+            <label for="pickup-date">Pickup date *</label><br>
+            <input type="date" id="pickup-date" name="pickup_date" required>
+          </p>
+          <p>
+            <label for="item-details">Item details *</label><br>
+            <textarea id="item-details" name="item_details" rows="5" cols="50" placeholder="Example: 2 Signature Loaves and 1 dozen cookies" required></textarea>
+          </p>
+          <p>
+            <label for="allergy-notes">Allergy notes (if applicable)</label><br>
+            <textarea id="allergy-notes" name="allergy_notes" rows="3" cols="50" placeholder="Example: nut allergy, dairy-free"></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Send My Request</button>
+          <button type="reset">Clear Form</button>
+        </p>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>Visit Us</h2>
+      <address>
+        123 Main Street<br>
+        Your Town, ST 00000<br>
+        Phone: (555) 555-0123
+      </address>
+      <p>We're two blocks from the train station. Look for the green door!</p>
+
+      <h3>Hours of Operation</h3>
+      <ul>
+        <li>Monday: Closed</li>
+        <li>Tuesday to Friday: 6:30 a.m. to 3:00 p.m.</li>
+        <li>Saturday and Sunday: 7:00 a.m. to 2:00 p.m.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery. Baked with love in our neighborhood.</p>
+  </footer>
+
+</body>
+</html>
