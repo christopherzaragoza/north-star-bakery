@@ -32,21 +32,24 @@
       <h2>Inquiry and Pre-Order Request</h2>
       <p>Fields marked with * are required.</p>
 
-      <form action="#" method="post">
+      <form id="order-form" action="#" method="post" novalidate>
 
         <fieldset>
           <legend>Your Information</legend>
           <p>
             <label for="name">Full name *</label><br>
             <input type="text" id="name" name="name" required>
+            <span class="error" id="name-error"></span>
           </p>
           <p>
             <label for="email">Email address *</label><br>
             <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <span class="error" id="email-error"></span>
           </p>
           <p>
             <label for="phone">Phone number (optional)</label><br>
             <input type="tel" id="phone" name="phone" placeholder="555-555-0123" pattern="\d{3}-\d{3}-\d{4}" title="Use the format 555-555-0123">
+            <span class="error" id="phone-error"></span>
           </p>
         </fieldset>
 
@@ -60,6 +63,7 @@
             <input type="radio" id="question" name="request_type" value="question">
             <label for="question">General question</label>
           </p>
+          <span class="error" id="request-type-error"></span>
         </fieldset>
 
         <fieldset>
@@ -67,10 +71,12 @@
           <p>
             <label for="pickup-date">Pickup date *</label><br>
             <input type="date" id="pickup-date" name="pickup_date" required>
+            <span class="error" id="pickup-date-error"></span>
           </p>
           <p>
             <label for="item-details">Item details *</label><br>
             <textarea id="item-details" name="item_details" rows="5" cols="50" placeholder="Example: 2 Signature Loaves and 1 dozen cookies" required></textarea>
+            <span class="error" id="item-details-error"></span>
           </p>
           <p>
             <label for="allergy-notes">Allergy notes (if applicable)</label><br>
@@ -82,6 +88,7 @@
           <button type="submit">Send My Request</button>
           <button type="reset">Clear Form</button>
         </p>
+        <p id="form-message"></p>
 
       </form>
     </section>
@@ -110,6 +117,8 @@
   <footer>
     <p>&copy; 2026 North Star Bakery. Baked with love in our neighborhood.</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
