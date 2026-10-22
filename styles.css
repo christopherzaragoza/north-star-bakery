@@ -185,6 +185,29 @@ button:hover {
   color: #4A2E1F;
 }
 
+/* Touchstone 4: favorite buttons on the products page */
+.fav-btn {
+  background-color: #FBF5EC;
+  color: #2E5E4E;
+  border: 2px solid #2E5E4E;
+  font-size: 14px;
+  padding: 4px 10px;
+  margin-left: 8px;
+}
+
+/* Touchstone 4: error messages under form fields */
+.error {
+  display: block;
+  color: #A12B2B;
+  font-weight: bold;
+}
+
+/* Touchstone 4: thank you message after the form is sent */
+#form-message {
+  color: #2E5E4E;
+  font-weight: bold;
+}
+
 /* Footer */
 footer {
   background-color: #4A2E1F;
